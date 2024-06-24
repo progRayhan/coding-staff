@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go_staff/functions"
+	"go_staff/structs"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	myAdd := structs.Address{}
+	myAdd2 := functions.MyAddress(myAdd)
+	fmt.Println(myAdd2.Name)
 }
